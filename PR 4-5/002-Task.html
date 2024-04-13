@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>JavaScript</title>
+
+    <script type="text/javascript">
+        function findUnique(arr) {
+            return arr.reduce((acc, current) => {
+                if (!acc.includes(current)) {
+                    acc.push(current);
+                }
+                return acc;
+            }, []); 
+        }
+
+        var initialArr = [1, 2, 3, 1, 5, 3, 4, 1];
+
+        var unique = findUnique(initialArr);
+
+        console.log("Initial array: " + initialArr);
+        console.log("</br>");
+        console.log("Unique elements: " + unique);
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
